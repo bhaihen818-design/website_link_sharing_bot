@@ -3,23 +3,23 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 # Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6889092713:AAE5Xzb4QISewtSb8-YK7iGS6gdQqJouY3w")
 
 # Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "22505271"))
+APP_ID = int(os.environ.get("APP_ID", "38627319"))
 
 # Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "c89a94fcfda4bc06524d0903977fc81e")
+API_HASH = os.environ.get("API_HASH", "18b0827896e979267ae2251b63830827")
 
 # OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "6695586027"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "1327021082"))
 
 # Port
 PORT = os.environ.get("PORT", "8080")
 
 # Database 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Cluster0:Cluster0@cluster0.c07xkuf.mongodb.net/?retryWrites=true&w=majority")
-DB_NAME = os.environ.get("DATABASE_NAME", "Cluster01")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://poulomig644_db_user:d9MMUd5PsTP5MDFf@cluster0.q5evcku.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_NAME = os.environ.get("DATABASE_NAME", "Cluster51")
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -27,8 +27,8 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {first}!\n\nI am a Website Link Sharing Bot. I can generate unique links for your website slugs.</b>")
 
 try:
-    ADMINS = [6695586027]
-    for x in (os.environ.get("ADMINS", "6695586027").split()):
+    ADMINS = [1327021082]
+    for x in (os.environ.get("ADMINS", "1327021082").split()):
         ADMINS.append(int(x))
 except ValueError:
     raise Exception("Your Admins list does not contain valid integers.")
